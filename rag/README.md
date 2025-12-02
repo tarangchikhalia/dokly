@@ -4,8 +4,8 @@ A RAG pipeline to retrieve data from personal documents using natural language.
 ## To Do
 -[x] Data Ingestion
 -[x] Chunking
--[ ] Embedding
--[ ] Vector store
+-[x] Embedding
+-[x] Vector store
 -[ ] Chunking strategies and preprocessing
 -[ ] Caching mechanism for embeddings
 -[ ] Retrieval

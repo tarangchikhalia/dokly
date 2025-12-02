@@ -13,6 +13,10 @@ class Settings(BaseSettings):
     CHUNK_SIZE: int = Field(default=1000, alias="CHUNK_SIZE")
     CHUNK_OVERLAP: int = Field(default=200, alias="CHUNK_OVERLAP")
 
+    # Vector Store
+    VECTOR_STORE_PATH: str = Field(default="./vector_store", alias="VECTOR_STORE_PATH")
+    VECTOR_STORE_COLLECTION: str = Field(default="documents", alias="VECTOR_STORE_COLLECTION")
+
 
     class Config:
         env_file = ".env"
