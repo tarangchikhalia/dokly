@@ -8,8 +8,8 @@ A RAG pipeline to retrieve data from personal documents using natural language.
 - [x] Vector store
 - [ ] Chunking strategies and preprocessing
 - [ ] Caching mechanism for embeddings
-- [ ] Retrieval
-- [ ] Generation
+- [x] Retrieval
+- [x] Generation
 - [ ] Evaluation
 - [ ] UI
 - [ ] Deployment

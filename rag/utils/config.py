@@ -17,6 +17,10 @@ class Settings(BaseSettings):
     VECTOR_STORE_PATH: str = Field(default="./vector_store", alias="VECTOR_STORE_PATH")
     VECTOR_STORE_COLLECTION: str = Field(default="documents", alias="VECTOR_STORE_COLLECTION")
 
+    LLM_PROVIDER: str = Field(default="Ollama", alias="LLM_PROVIDER")
+    LLM_MODEL: str = Field(default="llama2", alias="LLM_MODEL")
+    LLM_URL: str = Field(default="", alias="LLM_URL")
+    LLM_API_KEY: str = Field(default="", alias="LLM_API_KEY")
 
     class Config:
         env_file = ".env"
