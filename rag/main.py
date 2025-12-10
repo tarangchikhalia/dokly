@@ -2,6 +2,7 @@
 import asyncio
 import argparse
 from cli.serve import start_session
+from cli.vectordb import build_vector_store 
 
 
 def main():
@@ -10,19 +11,22 @@ def main():
         description="RAG Pipeline - Retrieve and generate answers from your documents",
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""\nExamples:
+        python main.py build    Build vector store from scratch (clears existing data)
         python main.py serve    Start an interactive question-answering session
         """
     )
 
     parser.add_argument(
         'command',
-        choices=['serve'],
+        choices=['build', 'serve'],
         help='Command to execute'
     )
 
     args = parser.parse_args()
 
-    if args.command == 'serve':
+    if args.command == 'build':
+        build_vector_store()
+    elif args.command == 'serve':
         asyncio.run(start_session())
 
 
