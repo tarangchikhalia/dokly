@@ -6,10 +6,13 @@ A RAG pipeline to retrieve data from personal documents using natural language.
 - [x] Chunking
 - [x] Embedding
 - [x] Vector store
-- [ ] Chunking strategies and preprocessing
-- [ ] Caching mechanism for embeddings
 - [x] Retrieval
 - [x] Generation
+- [ ] Document Preprocessing
+- [ ] Chunking strategies and preprocessing
+- [ ] Caching mechanism for embeddings
+- [ ] Document Citation
+- [ ] Query Translation
 - [ ] Evaluation
 - [ ] UI
 - [ ] Deployment
