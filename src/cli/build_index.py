@@ -1,6 +1,6 @@
 """Vector database management commands"""
-from ingestion.document_loader import DocumentLoader
-from ingestion.vector_store import VectorStore
+from src.rag.document_loader import DocumentLoader
+from src.rag.vector_store import VectorStore
 
 
 def build_vector_store():

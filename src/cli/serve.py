@@ -1,7 +1,7 @@
 """Interactive session for RAG pipeline"""
 import asyncio
-from generation.ollama import OllamaGenerator
-from utils.config import settings
+from src.rag.ollama import OllamaGenerator
+from src.utils.config import settings
 
 
 async def start_session():

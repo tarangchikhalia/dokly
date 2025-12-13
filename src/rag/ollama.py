@@ -2,8 +2,8 @@ from langchain_ollama import OllamaLLM
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 from langchain_core.runnables import RunnablePassthrough
-from ingestion.vector_store import VectorStore
-from utils.config import settings
+from src.rag.vector_store import VectorStore
+from src.utils.config import settings
 
 
 class OllamaGenerator:

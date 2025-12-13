@@ -6,7 +6,7 @@ from langchain_core.documents import Document
 from langchain_chroma import Chroma
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_community.vectorstores.utils import filter_complex_metadata
-from utils.config import settings
+from src.utils.config import settings
 
 
 class VectorStore:

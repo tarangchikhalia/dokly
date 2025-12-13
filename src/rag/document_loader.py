@@ -1,7 +1,7 @@
 """Scans the document directory and loads all document to docling documents"""
 import os
 from typing import Generator
-from utils.config import settings
+from src.utils.config import settings
 from langchain_core.documents import Document
 from langchain_docling import DoclingLoader
 from langchain_docling.loader import ExportType

@@ -1,8 +1,9 @@
 """Main entry point for the RAG pipeline CLI"""
 import asyncio
 import argparse
-from cli.serve import start_session
-from cli.vectordb import build_vector_store 
+from src.cli.serve import start_session
+from src.cli.build_index import build_vector_store
+from src.rag.vector_store import VectorStore
 
 
 def main():
@@ -18,13 +19,13 @@ def main():
 
     parser.add_argument(
         'command',
-        choices=['build', 'serve'],
+        choices=['build_index', 'serve'],
         help='Command to execute'
     )
 
     args = parser.parse_args()
 
-    if args.command == 'build':
+    if args.command == 'build_index':
         build_vector_store()
     elif args.command == 'serve':
         asyncio.run(start_session())
